@@ -42,7 +42,7 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#citra-satelit">Citra Satelit</a>
+              <a class="nav-link" href="#section-cs">Citra Satelit</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#raster-layout">Raster Layout</a>
@@ -78,28 +78,88 @@
     </section>
     <!-- Hero Section end -->
 
+    <!-- citra satelit section -->
+    <section id="section-cs">
+      <div class="cs-section">
+        <div class="cs1">
+          <h2 class="citra-satelit">Citra Satelit</h2>
+          <div class="underline"></div>
+          <div class="citra-content">
+            <img
+              src="assets/img/usgs.png"
+              alt="Citra Satelit USGS"
+              class="citra-image"
+            />
+            <p class="citra-text">
+              <strong>Download citra satelit menggunakan situs USGS</strong>
+            </p>
+          </div>
+          <div class="citra-gallery">
+            <div class="gallery-item">
+              <img
+                src="assets/img/cs1.png"
+                alt="Citra Satelit 1"
+                class="gallery-image"
+              />
+              <p class="gallery-text">
+                LC09_L2SP_120065_20240817_20240818_02_T1_SR_B2
+              </p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/img/cs2.png"
+                alt="Citra Satelit 2"
+                class="gallery-image"
+              />
+              <p class="gallery-text">
+                LC09_L2SP_120065_20240817_20240818_02_T1_SR_B3
+              </p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/img/cs3.png"
+                alt="Citra Satelit 3"
+                class="gallery-image"
+              />
+              <p class="gallery-text">
+                LC09_L2SP_120065_20240817_20240818_02_T1_SR_B4
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- citra satelit section end -->
+
+    <!-- Raster Layout Section -->
+    <section id="raster-layout">
+      <div class="raster-section">
+        <h2 class="raster-title">Raster Layout</h2>
+        <div class="underline"></div>
+        <img src="assets/img/qgis.png" alt="QGIS Logo" class="qgis-logo" />
+        <div class="raster-content">
+          <img
+            src="assets/img/raster.png"
+            alt="Raster Example"
+            class="raster-image"
+          />
+          <div class="raster-text-content">
+            <h3 class="raster-text">
+              Peta Penutupan Lahan Kecamatan Kraton 2024
+            </h3>
+            <p class="raster-description">
+              Peta ini menampilkan distribusi tutupan lahan di Kecamatan Kraton
+              berdasarkan citra satelit Landsat 8-9 OLI/TRIS C2 L2. Menggunakan
+              skala 1:120.000, peta ini dibuat dengan referensi peta rupa bumi
+              skala 1:12.000 dan batas administrasi kecamatan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Script Bootstrap & Scroll Effect -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      // Efek perubahan warna navbar saat scroll
-      window.addEventListener("scroll", function () {
-        var navbar = document.querySelector(".navbar");
-        if (window.scrollY > 50) {
-          navbar.classList.add("scrolled");
-        } else {
-          navbar.classList.remove("scrolled");
-        }
-      });
-
-      // Smooth scrolling effect
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-          });
-        });
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

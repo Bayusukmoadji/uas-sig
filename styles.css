@@ -1,3 +1,4 @@
+/* navbar section */
 /* === NAVBAR STICKY & SCROLL EFFECT === */
 .navbar {
   position: fixed;
@@ -5,17 +6,18 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(44, 62, 80, 0.9);
+  background-color: rgba(0, 121, 0, 0.9);
   padding: 15px 20px;
   transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
 
 /* Efek perubahan warna navbar saat scroll */
 .navbar.scrolled {
-  background-color: rgba(44, 62, 80, 1);
+  background-color: rgb(0, 113, 23);
   padding: 10px 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+/* navbar section end */
 
 /* === HERO SECTION === */
 .hero-section {
@@ -68,7 +70,7 @@
 
 /* === TOMBOL HERO SECTION === */
 .hero-section .btn-primary {
-  background-color: #f39c12;
+  background-color: rgb(0, 176, 0);
   border: none;
   padding: 12px 25px;
   font-size: 1.2rem;
@@ -77,7 +79,7 @@
 }
 
 .hero-section .btn-primary:hover {
-  background-color: #e67e22;
+  background-color: green;
   transform: translateY(-3px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
@@ -91,5 +93,154 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+/* hero section end */
+
+/* citra satelit section */
+.cs1 {
+  margin-top: 30px;
+}
+
+.citra-satelit {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: #111827;
+  margin-left: 40px;
+}
+
+#section-cs .underline {
+  width: 150px;
+  height: 5px;
+  background-color: green;
+  border-radius: 10px;
+  display: block;
+  margin-left: 40px !important;
+}
+
+.citra-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.citra-image {
+  width: 20%;
+  max-width: 600px;
+}
+.citra-text {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: #333;
+  max-width: 400px;
+  font-weight: bold;
+}
+.citra-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 10px;
+}
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.gallery-image {
+  width: auto;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 7px rgba(66, 66, 73, 0.9);
+}
+.gallery-text {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: #555;
+  padding-top: px;
+}
+/* citra satelit section end */
+
+/* Raster Layout Section */
+#raster-layout {
+  background: linear-gradient(to bottom, #f0fdf4, #dcfce7);
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.raster-title {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.underline {
+  width: 120px;
+  height: 4px;
+  background-color: green;
+  border-radius: 10px;
+  margin: 0 auto 30px;
+}
+
+.qgis-logo {
+  width: 15%;
+  max-width: 250px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.raster-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.raster-image {
+  width: 40%;
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.raster-image:hover {
+  transform: scale(1.05);
+}
+
+.raster-text-content {
+  max-width: 500px;
+  text-align: left;
+}
+
+.raster-text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.raster-description {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .raster-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .raster-image {
+    width: 80%;
   }
 }
