@@ -18,7 +18,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
     if (targetSection) {
       let navbarHeight = document.querySelector(".navbar").offsetHeight;
-      let targetPosition = targetSection.offsetTop - navbarHeight - 10;
+      let targetPosition = targetSection.offsetTop - navbarHeight + 1; // Tambah offset agar tidak 'gantung'
 
       window.scrollTo({
         top: targetPosition,
@@ -26,11 +26,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       });
     }
   });
-});
-
-// Menampilkan pesan saat tombol di hero-section diklik
-document.querySelector(".btn-primary").addEventListener("click", function () {
-  alert("Anda akan diarahkan ke halaman unduhan assets.");
 });
 
 // Animasi saat cursor diarahkan ke gambar atau teks

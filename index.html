@@ -81,50 +81,48 @@
     <!-- citra satelit section -->
     <section id="section-cs">
       <div class="cs-section">
-        <div class="cs1">
-          <h2 class="citra-satelit">Citra Satelit</h2>
-          <div class="underline"></div>
-          <div class="citra-content">
+        <h2 class="citra-satelit">Citra Satelit</h2>
+        <div class="underline"></div>
+        <div class="citra-content">
+          <img
+            src="assets/img/usgs.png"
+            alt="Citra Satelit USGS"
+            class="citra-image"
+          />
+          <p class="citra-text">
+            <strong>Download citra satelit menggunakan situs USGS</strong>
+          </p>
+        </div>
+        <div class="citra-gallery">
+          <div class="gallery-item">
             <img
-              src="assets/img/usgs.png"
-              alt="Citra Satelit USGS"
-              class="citra-image"
+              src="assets/img/cs1.png"
+              alt="Citra Satelit 1"
+              class="gallery-image"
             />
-            <p class="citra-text">
-              <strong>Download citra satelit menggunakan situs USGS</strong>
+            <p class="gallery-text">
+              LC09_L2SP_120065_20240817_20240818_02_T1_SR_B2
             </p>
           </div>
-          <div class="citra-gallery">
-            <div class="gallery-item">
-              <img
-                src="assets/img/cs1.png"
-                alt="Citra Satelit 1"
-                class="gallery-image"
-              />
-              <p class="gallery-text">
-                LC09_L2SP_120065_20240817_20240818_02_T1_SR_B2
-              </p>
-            </div>
-            <div class="gallery-item">
-              <img
-                src="assets/img/cs2.png"
-                alt="Citra Satelit 2"
-                class="gallery-image"
-              />
-              <p class="gallery-text">
-                LC09_L2SP_120065_20240817_20240818_02_T1_SR_B3
-              </p>
-            </div>
-            <div class="gallery-item">
-              <img
-                src="assets/img/cs3.png"
-                alt="Citra Satelit 3"
-                class="gallery-image"
-              />
-              <p class="gallery-text">
-                LC09_L2SP_120065_20240817_20240818_02_T1_SR_B4
-              </p>
-            </div>
+          <div class="gallery-item">
+            <img
+              src="assets/img/cs2.png"
+              alt="Citra Satelit 2"
+              class="gallery-image"
+            />
+            <p class="gallery-text">
+              LC09_L2SP_120065_20240817_20240818_02_T1_SR_B3
+            </p>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="assets/img/cs3.png"
+              alt="Citra Satelit 3"
+              class="gallery-image"
+            />
+            <p class="gallery-text">
+              LC09_L2SP_120065_20240817_20240818_02_T1_SR_B4
+            </p>
           </div>
         </div>
       </div>
@@ -149,14 +147,82 @@
             </h3>
             <p class="raster-description">
               Peta ini menampilkan distribusi tutupan lahan di Kecamatan Kraton
-              berdasarkan citra satelit Landsat 8-9 OLI/TRIS C2 L2. Menggunakan
-              skala 1:120.000, peta ini dibuat dengan referensi peta rupa bumi
-              skala 1:12.000 dan batas administrasi kecamatan.
+              berdasarkan citra satelit
+              <strong>Landsat 8-9 OLI/TRIS C2 L2</strong>. Menggunakan skala
+              <strong>1:120.000</strong>, peta ini dibuat dengan referensi
+              <strong>peta rupa bumi skala 1:12.000</strong> dan batas
+              administrasi kecamatan.
             </p>
+
+            <div class="legend-container">
+              <h3 class="legend-title">LEGEND</h3>
+              <p class="legend-subtitle">Raster_Kec_Kraton</p>
+              <ul class="legend-list">
+                <li><span class="icon red"></span> Band 1</li>
+                <li><span class="icon green"></span> Band 2</li>
+                <li><span class="icon blue"></span> Band 3</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Raster Layout Section end -->
+
+    <!-- Vector layout section -->
+    <section id="vector-layout">
+      <div class="vector-section">
+        <h2 class="vector-title">Vector Layout</h2>
+        <div class="underline"></div>
+        <div class="vector-content">
+          <img
+            src="assets/img/vector.png"
+            alt="vector Example"
+            class="vector-image"
+          />
+          <div class="vector-text-content">
+            <h3 class="vector-text">Peta Administrasi Kecamatan Kraton 2024</h3>
+            <p class="vector-description">
+              Peta ini menampilkan batas administrasi Kecamatan Kraton yang
+              terbagi menjadi tiga desa, yaitu
+              <strong>Kadipaten, Patehan, dan Panembahan</strong>. Menggunakan
+              skala <strong>1:850.000</strong>, peta ini dibuat dengan referensi
+              <strong>peta rupa bumi skala 1:85.000</strong> dan batas
+              administrasi desa di kecamatan ini.
+            </p>
+
+            <p class="vector-description">
+              <span class="highlight">Legenda peta</span> menunjukkan berbagai
+              elemen penting, termasuk:
+            </p>
+
+            <ul class="legend-list">
+              <li>
+                <span class="icon government">🏛️</span> Kantor Pemerintahan
+              </li>
+              <li><span class="icon kecamatan">🗺️</span> KEC_KRATON</li>
+              <li><span class="icon education">🎓</span> Pendidikan</li>
+              <li><span class="icon heritage">🏛️</span> Cagar Budaya</li>
+              <li><span class="icon worship">☪️</span> Sarana Ibadah</li>
+              <li><span class="icon green-area"></span> Alun-Alun</li>
+              <li><span class="icon road"></span> Jalan</li>
+              <li><span class="icon bridge">🌉</span> Jembatan</li>
+              <li><span class="icon river">🌊</span> Sungai</li>
+              <li><span class="icon contour"></span> Kontur</li>
+              <li><span class="icon village patehan"></span> Ds. Patehan</li>
+              <li>
+                <span class="icon village panembahan"></span> Ds. Panembahan
+              </li>
+              <li>
+                <span class="icon village kadipaten"></span> Ds. Kadipaten
+              </li>
+              <li><span class="icon market">🏬</span> Market</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- vector layout section end -->
 
     <!-- Script Bootstrap & Scroll Effect -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
