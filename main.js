@@ -18,7 +18,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
     if (targetSection) {
       let navbarHeight = document.querySelector(".navbar").offsetHeight;
-      let targetPosition = targetSection.offsetTop - navbarHeight + 1; // Tambah offset agar tidak 'gantung'
+      let targetPosition = targetSection.offsetTop - navbarHeight + 1;
 
       window.scrollTo({
         top: targetPosition,
@@ -127,3 +127,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// laporan
+document
+  .getElementById("downloadButton")
+  .addEventListener("click", function () {
+    alert("Laporan sedang diunduh...");
+  });

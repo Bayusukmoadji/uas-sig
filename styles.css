@@ -366,7 +366,7 @@
 #vector-layout {
   background: linear-gradient(to bottom, #dcfce7, #9ef3f6);
   text-align: center;
-  padding: 10px 20px;
+  padding: 20px 20px;
 }
 
 .vector-title {
@@ -566,15 +566,15 @@
 }
 
 .village.patehan {
-  background: yellow;
+  background: rgb(194, 216, 0);
 }
 
 .village.panembahan {
-  background: lightblue;
+  background: rgba(0, 203, 196, 0.631);
 }
 
 .village.kadipaten {
-  background: pink;
+  background: rgba(255, 109, 134, 0.56);
 }
 
 .market {
@@ -589,3 +589,223 @@
 
 /* vector layout section end */
 /* =========================== */
+
+/* laporan secrion */
+/* =========================== */
+#laporan {
+  margin-bottom: 45px;
+  padding-top: 45px;
+}
+.laporan-content {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 60%;
+  margin: auto;
+}
+
+.logo-container img {
+  width: 50%;
+  height: auto;
+  padding: 15px;
+}
+.download-btn button {
+  padding: 10px 20px;
+  margin: 11px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.download-btn button:hover {
+  background-color: rgb(7, 79, 7);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+/* laporan secrio end */
+/* =========================== */
+
+/* =======================
+   Kontak Section Styling
+   ======================= */
+.contact {
+  padding-bottom: 60px;
+  padding-top: 10px;
+}
+
+.contact .info-wrap {
+  background-color: var(--surface-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.contact .info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.text-kontak {
+  margin-left: 15px;
+}
+
+.contact .info-item i {
+  font-size: 24px;
+  color: #007bff;
+  background-color: rgba(0, 183, 255, 0.2);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact .info-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact .info-item p {
+  margin-bottom: 0;
+  color: var(--text-color);
+}
+
+.contact .info-item a {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Animasi saat cursor mengarah ke ikon */
+.contact .info-item:hover i {
+  animation: bounce 0.6s ease-in-out;
+}
+
+/* Keyframes untuk animasi melompat */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.contact .col-lg-7 {
+  margin-top: 40px;
+}
+
+.contact .php-email-form {
+  background-color: var(--surface-color);
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.contact .php-email-form textarea {
+  width: 100% !important; /* Pastikan textarea mengisi seluruh lebar form */
+  height: 150px; /* Menentukan tinggi textarea */
+  font-size: 14px;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* Menambahkan border untuk gaya */
+}
+
+.send-message-btn {
+  background-color: green;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto;
+  font-size: 16px;
+  text-align: center;
+}
+
+.send-message-btn:hover {
+  background-color: rgb(21, 105, 21);
+}
+
+@media (max-width: 992px) {
+  .contact .col-lg-5,
+  .contact .col-lg-7 {
+    width: 100%;
+  }
+}
+/* =======================
+   Kontak Section Styling end
+   ======================= */
+
+/* =======================
+   footer Section Styling
+   ======================= */
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer p {
+  margin: 5px 0;
+}
+.footer .footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+}
+.footer .footer-links li {
+  display: inline;
+}
+.footer .footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer .footer-links a:hover {
+  color: green;
+}
+.footer .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.footer .social-icons a {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+.footer .social-icons a:hover {
+  color: green;
+}
+/* =======================
+   footer Section Styling end
+   ======================= */

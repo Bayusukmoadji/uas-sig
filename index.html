@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sistem Informasi Geografis</title>
-    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -13,7 +12,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <!-- Navbar Sticky -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -223,6 +229,170 @@
       </div>
     </section>
     <!-- vector layout section end -->
+
+    <!-- section laporan -->
+    <section id="laporan">
+      <div class="laporan-content">
+        <div class="logo-container">
+          <img src="assets/img/pdf.png" alt="Logo PDF" />
+        </div>
+        <div class="download-btn">
+          <a
+            href="assets/files/UAS Laporan SIG - 20220801089 Bayu Sukmo Adji ( KRATON )  .pdf"
+            download
+          >
+            <button id="downloadButton">Download</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- section laporan end -->
+
+    <!-- section kontak -->
+    <section id="kontak" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Kontak</h2>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <!-- Left Side: Contact Info -->
+          <div class="col-lg-5">
+            <div class="info-wrap">
+              <div class="info-item d-flex">
+                <a
+                  href="https://www.google.com/maps/place/Warung+Makan+%22Mak+Iyung%22/@-6.3283229,106.5584788,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69e2ea819be227:0x8812bb1cc961d88e!8m2!3d-6.3283229!4d106.5610537!16s%2Fg%2F11r_vnv5d3?entry=ttu&g_ep=EgoyMDI1MDEyMC4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                >
+                  <i class="bi bi-geo-alt"></i>
+                  <div class="text-kontak">
+                    <h3>Address</h3>
+                    <p>
+                      Jl. H. Tabri, Ds. Bojong Kamal, Legok-Tangerang-Banten
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="info-item d-flex">
+                <a href="https://wa.me/6281213633264" target="_blank">
+                  <i class="bi bi-telephone"></i>
+                  <div class="text-kontak">
+                    <h3>Call Us</h3>
+                    <p>+62 812 1363 3264</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="info-item d-flex">
+                <a href="mailto:sukmaadjibayu@gmail.com">
+                  <i class="bi bi-envelope"></i>
+                  <div class="text-kontak">
+                    <h3>Email Us</h3>
+                    <p>sukmaadjibayu@gmail.com</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Embedded Google Map -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d993.4887580246425!2d106.5584788!3d-6.3283229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e2ea819be227%3A0x8812bb1cc961d88e!2sWarung%20Makan%20%22Mak%20Iyung%22!5e0!3m2!1sid!2sid!4v1694634290237!5m2!1sid!2sid
+                frameborder="0"
+                style="border: 0; width: 100%; height: 270px"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Right Side: Contact Form -->
+          <div class="col-lg-7">
+            <form
+              action="https://getform.io/f/agddejvb"
+              method="post"
+              class="php-email-form"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name-field"
+                    class="form-control"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email-field"
+                    class="form-control"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject-field"
+                    class="form-control"
+                    placeholder="Enter subject"
+                    required
+                  />
+                </div>
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea
+                    name="message"
+                    id="message-field"
+                    rows="10"
+                    class="form-control"
+                    placeholder="Write your message here"
+                    required
+                  ></textarea>
+                  <div class="col-md-12 text-center mt-5">
+                    <!-- Use a standard button instead of Bootstrap -->
+                    <button type="submit" class="send-message-btn">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section kontak end -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+          <div class="footer-content">
+              <p>&copy; 2025 Bayu Sukmo Adji. All Rights Reserved.</p>
+              <ul class="footer-links">
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="https://wa.me/6281213633264" target="_blank">Contact</a></li>
+              </ul>
+              <div class="social-icons">
+                  <a href="https://github.com/Bayusukmoadji" target="_blank"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/bayu-sukmo-adji-65a641335/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.instagram.com/bayu_sukma_adji/" target="_blank"><i class="bi bi-instagram"></i></a>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+    <!-- Footer end -->
 
     <!-- Script Bootstrap & Scroll Effect -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
