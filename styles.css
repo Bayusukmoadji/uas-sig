@@ -106,7 +106,6 @@
   background: linear-gradient(to bottom, #dcfce7, #f0fdf4);
   scroll-margin-top: 90px;
 }
-
 .citra-satelit {
   font-family: "Inter", sans-serif;
   font-weight: bold;
@@ -116,7 +115,6 @@
   margin-bottom: 0px;
   padding-top: 10px;
 }
-
 #section-cs .underline {
   width: 150px;
   height: 5px;
@@ -125,7 +123,6 @@
   display: block;
   margin-left: 40px !important;
 }
-
 .citra-content {
   display: flex;
   flex-direction: column;
@@ -180,7 +177,6 @@
   text-align: center;
   padding: 10px 20px;
 }
-
 .raster-title {
   font-family: "Inter", sans-serif;
   font-weight: bold;
@@ -190,7 +186,6 @@
   margin-left: 20px;
   margin-bottom: 0px;
 }
-
 #raster-layout .underline {
   width: 120px;
   height: 4px;
@@ -198,14 +193,12 @@
   border-radius: 10px;
   margin-left: 20px;
 }
-
 .qgis-logo {
   width: 20%;
   max-width: 600px;
   display: block;
   margin: 0 auto;
 }
-
 .raster-content {
   display: flex;
   flex-wrap: wrap;
@@ -215,7 +208,6 @@
   margin: 10px;
   margin-bottom: 80px;
 }
-
 .raster-image {
   width: 50%;
   max-width: 600px;
@@ -225,16 +217,13 @@
   margin-left: 20px;
   margin: 20px;
 }
-
 .raster-image:hover {
   transform: scale(1.05);
 }
-
 .raster-text-content {
   max-width: 500px;
   text-align: left;
 }
-
 .raster-text {
   font-family: "Inter", sans-serif;
   font-size: 20px;
@@ -242,16 +231,14 @@
   color: #111827;
   margin-bottom: 10px;
 }
-
 .raster-text-content {
-  max-width: 700px; /* Batasi lebar agar lebih rapi */
-  margin: auto; /* Tengah jika perlu */
-  text-align: justify; /* Justify untuk rata kanan-kiri */
+  max-width: 700px;
+  margin: auto;
+  text-align: justify;
   background-color: #f0fdf4;
   padding: 20px;
   border-radius: 10px;
 }
-
 .raster-text {
   font-family: "Inter", sans-serif;
   font-size: 24px;
@@ -271,7 +258,6 @@
   line-height: 1.8;
   margin-bottom: 15px;
 }
-
 /* Container untuk legend */
 .legend-container {
   max-width: 250px;
