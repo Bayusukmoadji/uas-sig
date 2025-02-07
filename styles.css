@@ -11,6 +11,13 @@
   transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
 /* Efek perubahan warna navbar saat scroll */
 .navbar.scrolled {
   background-color: rgb(0, 113, 23);
@@ -64,7 +71,7 @@
 }
 
 .hero-section p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
   opacity: 0.9;
   animation: fadeIn 1.8s ease-in-out;
@@ -794,4 +801,62 @@
 }
 /* =======================
    footer Section Styling end
+   ======================= */
+
+/* =======================
+    media query handphone
+   ======================= */
+@media only screen and (max-width: 992px) {
+  /* navbar */
+  .navbar-toggle {
+    font-size: 18px;
+  }
+  /* navbar end */
+
+  /* hero section */
+  .hero-section h1 {
+    font-size: 190%;
+  }
+
+  .hero-section p {
+    font-size: 80%;
+  }
+
+  .hero-section .btn-primary {
+    font-size: 100%;
+    padding: 12px 20px;
+  }
+
+  .citra-satelit {
+    font-size: 150%;
+  }
+
+  #section-cs .underline {
+    width: 115px;
+    margin-bottom: 5%;
+  }
+
+  .raster-title {
+    font-size: 150%;
+  }
+
+  #raster-layout .underline {
+    width: 125px;
+    margin-bottom: 5%;
+  }
+
+  .vector-title {
+    font-size: 150%;
+    justify-content: center;
+    display: flex;
+  }
+
+  #vector-layout .underline {
+    width: 20%;
+    margin-bottom: 5%;
+  }
+}
+
+/* =======================
+    media query handphone end
    ======================= */
