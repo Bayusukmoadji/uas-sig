@@ -128,7 +128,7 @@
   background-color: green;
   border-radius: 10px;
   display: block;
-  margin-left: 40px !important;
+  margin-left: 40px;
 }
 .citra-content {
   display: flex;
@@ -646,10 +646,10 @@
   margin-left: 15px;
 }
 
-.contact .info-item i {
+.info-item i {
   font-size: 24px;
-  color: #007bff;
-  background-color: rgba(0, 183, 255, 0.2);
+  color: #1e5e18;
+  background-color: rgba(34, 255, 0, 0.359);
   width: 60px;
   height: 60px;
   display: flex;
@@ -659,17 +659,23 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.contact .info-item h3 {
+.info-item h3 {
   font-size: 20px;
   font-weight: 600;
 }
 
-.contact .info-item p {
+.mark {
+  background-color: white;
+  display: flex;
+  padding: 0;
+}
+
+.info-item p {
   margin-bottom: 0;
   color: var(--text-color);
 }
 
-.contact .info-item a {
+.info-item a {
   display: flex;
   align-items: center;
   color: inherit;
@@ -677,7 +683,7 @@
 }
 
 /* Animasi saat cursor mengarah ke ikon */
-.contact .info-item:hover i {
+.info-item:hover i {
   animation: bounce 0.6s ease-in-out;
 }
 
@@ -694,19 +700,19 @@
   }
 }
 
-.contact .col-lg-7 {
+.col-lg-7 {
   margin-top: 40px;
 }
 
-.contact .php-email-form {
+.php-email-form {
   background-color: var(--surface-color);
   padding: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.php-email-form input,
+.php-email-form textarea {
   font-size: 14px;
   padding: 12px;
   border-radius: 6px;
@@ -714,14 +720,14 @@
   width: 100%;
 }
 
-.contact .php-email-form textarea {
-  width: 100% !important; /* Pastikan textarea mengisi seluruh lebar form */
-  height: 150px; /* Menentukan tinggi textarea */
+.php-email-form textarea {
+  width: 100%;
+  height: 150px;
   font-size: 14px;
   padding: 12px;
   border-radius: 6px;
   margin-bottom: 15px;
-  border: 1px solid #ccc; /* Menambahkan border untuk gaya */
+  border: 1px solid #ccc;
 }
 
 .send-message-btn {
@@ -741,12 +747,6 @@
   background-color: rgb(21, 105, 21);
 }
 
-@media (max-width: 992px) {
-  .contact .col-lg-5,
-  .contact .col-lg-7 {
-    width: 100%;
-  }
-}
 /* =======================
    Kontak Section Styling end
    ======================= */
@@ -817,7 +817,7 @@
 
   /* hero section */
   .hero-section h1 {
-    font-size: 190%;
+    font-size: 150%;
   }
 
   .hero-section p {
@@ -828,27 +828,69 @@
     font-size: 100%;
     padding: 12px 20px;
   }
+
+  .hero-section .btn-primary {
+    font-size: 100%;
+    padding: 7px 15px;
+  }
   /* hero section end */
 
   /* citra satelit */
   .citra-satelit {
     font-size: 150%;
+    margin-left: 6px;
   }
 
-  #section-cs .underline {
+  #section-cs .cs-section .underline {
     width: 115px;
     margin-bottom: 5%;
+    margin-left: 6px;
+  }
+
+  .citra-image {
+    width: 70%;
+  }
+
+  .gallery-image {
+    width: 50%;
+  }
+
+  .gallery-text {
+    font-size: 80%;
   }
   /* citra satelit end */
 
   /* raster */
   .raster-title {
     font-size: 150%;
+    margin-left: 6px;
+  }
+
+  #raster-layout .underline {
+    width: 115px;
+    margin-bottom: 5%;
+    margin-left: 6px;
+  }
+
+  #raster-layout {
+    padding-left: 0%;
   }
 
   #raster-layout .underline {
     width: 125px;
     margin-bottom: 5%;
+  }
+
+  .qgis-logo {
+    width: 70%;
+  }
+
+  .raster-image {
+    width: 90%;
+  }
+
+  .raster-content {
+    gap: 0;
   }
 
   /* raster end */
@@ -864,5 +906,38 @@
     width: 20%;
     margin-bottom: 5%;
   }
+
+  .vector-image {
+    width: 90%;
+  }
+
+  .vector-content {
+    gap: 0;
+  }
+
+  /* vector end */
+
+  /* laporan section */
+  .logo-container img {
+    width: 100%;
+  }
+
+  /* laporan section end */
+
+  /* kontak section */
+  .contact .info-item a {
+    display: flex;
+    align-items: space-between;
+  }
+
+  .contact .info-item p {
+    font-size: 10px;
+  }
+  /* kontak section end */
+
+  /* footer section */
+  .footer p {
+    font-size: smaller;
+  }
+  /* footer section end */
 }
-/* vector end */
